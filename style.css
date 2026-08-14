@@ -263,3 +263,33 @@ a {
       transition: 350ms opacity 700ms;
    }
 }
+
+#home {
+   height: 100vh;
+   background-color: lightcyan;
+   position: relative;
+}
+
+.folder-container {
+   background-color: lightpink;
+   width: 50%;
+   padding: 10px 30px;
+   text-align: center;
+   border-radius: 20px 20px 0px 0px;
+   height: 50vh;
+   position: absolute;
+   right: 1rem;
+   bottom: 0;
+}
+
+.folder-container:hover {
+   height: 80vh;
+}
+
+#about {
+   height: 100vh;
+
+   h1 {
+      text-align: center;
+   }
+}
