@@ -293,3 +293,8 @@ a {
       text-align: center;
    }
 }
+
+#menu {
+   height: 100vh;
+   text-align: center;
+}
