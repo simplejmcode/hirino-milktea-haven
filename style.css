@@ -300,7 +300,6 @@ a {
    text-align: center;
    bottom: 0;
    right: 1rem;
-   transition: 0.8s ease;
 }
 
 #about {
@@ -325,8 +324,10 @@ a {
       height: 480px;
       background-color: lightsalmon;
       position: absolute;
+      border-radius: 15px;
       top: 150px;
       left: 585px;
+      overflow: hidden;
       clip-path: path(
          "M 15,0 L 330,0 A 15,15 0,0,1 345,15 L 345,50 A 15,15 0,0,0 360,65 L 895,65 A 15,15 0,0,1 910,80 L 910,465 A 15,15 0,0,1 895,480 L 15,480 A 15,15 0,0,1 0,465 L 0,15 A 15,15 0,0,1 15,0 Z"
       );
