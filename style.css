@@ -268,43 +268,68 @@ a {
    height: 100vh;
    background-color: lightcyan;
    position: relative;
+   overflow: hidden;
 }
 
 .folder-container {
    background-color: lightpink;
-   width: 50%;
+   width: 757px;
    padding: 10px 30px;
    text-align: center;
-   border-radius: 20px 20px 0px 0px;
-   height: 50vh;
+   height: 580px;
    position: absolute;
+   clip-path: path(
+      "M 15,0 L 742,0 A 15,15 0,0,1 757,15 L 757,385 A 15,15 0,0,1 742,400 L 120,400 A 25,25 0,0,0 100,420 L 100,580 L 0,580 L 0,15 A 15,15 0,0,1 15,0 Z"
+   );
+   /* top: 21.5rem; */
    right: 1rem;
    bottom: 0;
    transition: 0.8s ease;
 }
 
 .folder-container:hover {
-   height: 77.5vh;
+   top: 9.5rem;
 }
 
 #popUp-container {
-   width: 200px;
-   height: 200px;
-   background-color: lightblue;
+   background-color: lightpink;
    position: absolute;
+   width: 645px;
+   height: 167.5px;
+   border-radius: 15px 15px 0px 0px;
    text-align: center;
-   top: 20rem;
-   left: 15rem;
-   clip-path: path(
-      "M 10,40 L 70,40 A 10,10 0,0,0 80,30 L 80,10 A 10,10 0,0,1 90,0 L 140,0 A 10,10 0,0,1 150,10 L 150,190 A 10,10 0,0,1 140,200 L 10,200 A 10,10 0,0,1 0,190 L 0,50 A 10,10 0,0,1 10,40 Z"
-   );
+   bottom: 0;
+   right: 1rem;
+   transition: 0.8s ease;
 }
 
 #about {
    height: 100vh;
+   position: relative;
+   background-color: lightgoldenrodyellow;
 
-   h1 {
-      text-align: center;
+   .about-header {
+      background-color: lightblue;
+      display: flex;
+      width: 625px;
+      height: 60px;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      left: 30rem;
+      border-radius: 0px 0px 15px 15px;
+   }
+
+   .about-folder {
+      width: 910px;
+      height: 480px;
+      background-color: lightsalmon;
+      position: absolute;
+      top: 150px;
+      left: 585px;
+      clip-path: path(
+         "M 15,0 L 330,0 A 15,15 0,0,1 345,15 L 345,50 A 15,15 0,0,0 360,65 L 895,65 A 15,15 0,0,1 910,80 L 910,465 A 15,15 0,0,1 895,480 L 15,480 A 15,15 0,0,1 0,465 L 0,15 A 15,15 0,0,1 15,0 Z"
+      );
    }
 }
 
